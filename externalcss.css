@@ -1,0 +1,73 @@
+header
+{
+    text-align: center;
+    padding: 50px;
+    font-size: 70px;
+    background-color: orange;
+    border-radius: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 10px 10px 10px;
+}
+
+footer
+{
+    background-color: green;
+    bottom: 0px;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    border-radius: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 10px 10px 5px;
+    
+}
+div
+{
+    background-color: blue;
+    border-radius: 35px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px;
+}
+
+#a{grid-area: a1; background-color: black;}
+#b{grid-area: b1;background-color: black;}
+#c{grid-area: c1;background-color: black;}
+#d{grid-area: d1;background-color: black;}
+#e{grid-area: e1;background-color: black;}
+#f{grid-area: f1;background-color: black;}
+
+.maindiv
+{
+    display: grid;
+    grid-template-areas: "a1 a1 b1 b1 c1 c1"
+    "d1 d1 e1 e1 f1 f1";
+}
+
+.container {
+    position: relative;
+    width: 80%;
+  }
+
+.overlay
+{
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  right: 0;
+  background-color: #008CBA;
+  opacity: 0.75;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  transition: .3s ease;
+}
+.container:hover .overlay {
+    transform: scale(1);
+  }
+  .image {
+    width: 200px;
+    height: 200px;
+  }  
